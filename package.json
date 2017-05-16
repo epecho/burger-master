@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "burger-master",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -17,14 +17,13 @@
     "start": "node server.js"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "git+https://github.com/epecho/burger-master.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Danel Roldan",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/epecho/burger-master/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/epecho/burger-master#readme"
 }

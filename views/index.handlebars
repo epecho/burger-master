@@ -1,12 +1,12 @@
 <div class="container">
 <div class="row">
   <div class="col-xs-12">
-    <h1>burgers!</h1>
+    {{!-- <h1>burgers!</h1> --}}
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h2>Add a burger</h2>
+    {{!-- <h2>Add a burger</h2> --}}
       <form class="create-update-form" action="/burger/create" method="POST", id= "form1">
 
       <div class="form-group">
@@ -14,13 +14,13 @@
         <input type="text" id="ca" name="name">
       </div>
 
-      <button type="submit">Add burger</button>
+      <input id='add' type="submit">
       </form>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-6">
-  <h2>burgers that are not devoured!</h2>
+  <h2>Not Devoured!</h2>
 
   <ul>
     {{#each burgers}}
@@ -30,7 +30,7 @@
 
           <form action="/burgers/eat?_method=PUT" method="POST">
             <input type="hidden" name="burger_id" value={{this.id}}>
-            <button type="submit">BURGER TIME!</button>
+            <button type="submit"></button>
             {{!-- <button id="delete" type="submit">X</button> --}}
           </form>
 
@@ -41,7 +41,7 @@
   </ul>
   </div>
   <div class="col-xs-6">
-    <h2>burgers that are devoured!</h2>
+    <h2>Devoured!</h2>
     <ul>
       {{#each burgers}}
         {{#if this.devoured}}
@@ -50,7 +50,7 @@
 
             <form action="/burgers/notDevoured?_method=PUT" method="POST">
               <input type="hidden" name="burger_id" value={{this.id}} id= "input_devoured">
-              <button type="submit">BURGER TIME!</button>
+              <button type="submit"></button>
               {{!-- <button type="submit">X</button> --}}
             </form>
 
@@ -64,12 +64,5 @@
 <script type="text/javascript">
 
 </script>
-
-
-
-
-
-
-
 
 </div>
